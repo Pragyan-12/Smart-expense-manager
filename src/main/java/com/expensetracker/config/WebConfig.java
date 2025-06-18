@@ -8,7 +8,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOriginPatterns("https://smartexpensemanager-b3991.web.app") // Use allowedOriginPatterns instead of allowedOrigins
+                .allowedOriginPatterns("https://smartexpensemanager-b3991.web.app", "https://smartexpensemanager-b3991.firebaseapp.com") // Use allowedOriginPatterns instead of allowedOrigins
                 .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
